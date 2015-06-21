@@ -1,6 +1,7 @@
 package team.gif.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.command.Subsystem;
 import team.gif.OI;
 import team.gif.subsystems.*;
 
@@ -14,6 +15,7 @@ public abstract class CommandBase extends Command {
 
     public static Shooter shooter = new Shooter();
     public static Reloader reloader = new Reloader();
+    public static DriveTrain drivetrain = new DriveTrain();
     
     public static OI oi;
     // Create a single static instance of all of your subsystems

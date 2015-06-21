@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.wpi.first.wpilibj.templates;
+package team.gif;
 
 /**
  *
@@ -11,4 +11,5 @@ package edu.wpi.first.wpilibj.templates;
  */
 public class Globals {
     public static final double reloadSpeed = 0.50;
+    public static final double deadzone = .1;
 }

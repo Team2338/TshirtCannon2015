@@ -1,6 +1,6 @@
 package team.gif.commands;
 
-import edu.wpi.first.wpilibj.templates.*;
+import team.gif.*;
 import team.gif.subsystems.Reloader;
 
 /**

@@ -10,13 +10,13 @@ import team.gif.commands.*;
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
-        public Joystick leftJoystick = new Joystick(1);
-    public Joystick rightJoystick = new Joystick(2);
+    public static final Joystick leftStick = new Joystick(1);
+    public static final Joystick rightStick = new Joystick(2);
     
-    public Button leftTrigger;
+    private static Button leftTrigger;
     
     public OI(){
-        leftTrigger = new JoystickButton(leftJoystick, 1);
+        leftTrigger = new JoystickButton(leftStick, 1);
         leftTrigger.whenPressed(new Fire());
     }
 }
