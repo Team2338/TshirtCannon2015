@@ -12,4 +12,6 @@ package team.gif;
 public class Globals {
     public static final double reloadSpeed = 0.50;
     public static final double deadzone = .1;
+    
+    public static int shotCount = 0;
 }

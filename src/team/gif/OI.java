@@ -14,6 +14,8 @@ public class OI {
     public static final Joystick rightStick = new Joystick(2);
     
     private static Button leftTrigger;
+    private static Button right2;
+    private static Button right3;
     
     public OI(){
         leftTrigger = new JoystickButton(leftStick, 1);

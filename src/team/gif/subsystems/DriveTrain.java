@@ -12,7 +12,7 @@ import team.gif.*;
 public class DriveTrain extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
-private static final Victor frontLeft = new Victor(RobotMap.leftMotor);
+    private static final Victor frontLeft = new Victor(RobotMap.leftMotor);
     private static final Victor frontRight = new Victor(RobotMap.rightMotor);
     
     public void driveLeft(double speed) {

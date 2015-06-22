@@ -17,10 +17,8 @@ public class RobotMap {
     public static final int readySensor = 1;
     
     //Solenoid
-    public static final int shootUpA = 0;
-    public static final int shootUpB = 1;
-    public static final int shootDownA = 2;
-    public static final int shootDownB = 3;
-    public static final int lockA = 4;
-    public static final int lockB = 5;
+    public static final int shootTop = 0;
+    public static final int shootBottom = 1;
+    public static final int lockA = 2;
+    public static final int lockB = 3;
 }
