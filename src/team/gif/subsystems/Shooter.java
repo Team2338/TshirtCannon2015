@@ -7,7 +7,7 @@ import team.gif.*;
 
 /**
  *
- * @oauth Nathan
+ * @author Nathan
  */
 
 public class Shooter extends Subsystem {
@@ -16,12 +16,14 @@ public class Shooter extends Subsystem {
     private static final Solenoid shootTop = new Solenoid(RobotMap.shootTop);
     private static final Solenoid shootBottom = new Solenoid(RobotMap.shootBottom);
     
-    public void shootTop(){
-        
-    }
-    
-    public void shootBottom(){
-        
+    public void fire(){
+        if(Globals.shootTop){
+            shootTop.set(true);
+        }else{
+            shootBottom.set(true);
+        }
+        Globals.shootTop = !Globals.shootTop;
+        Globals.shotCount = 1;
     }
     
     public void changeAngle(){

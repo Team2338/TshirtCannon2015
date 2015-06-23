@@ -5,7 +5,7 @@ import team.gif.subsystems.Reloader;
 
 /**
  *
- * @oauth Derek Ho
+ * @author Derek Ho
  */
 public class Reload extends CommandBase {
     

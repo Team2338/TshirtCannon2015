@@ -5,6 +5,8 @@
  */
 package team.gif.commands;
 
+import team.gif.Globals;
+
 /**
  *
  * @author Nathan
@@ -12,8 +14,7 @@ package team.gif.commands;
 public class Fire extends CommandBase {
     
     public Fire() {
-        // Use requires() here to declare subsystem dependencies
-        // eg. requires(chassis);
+        requires(shooter);
     }
 
     // Called just before this Command runs the first time
@@ -22,11 +23,12 @@ public class Fire extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+        shooter.fire();
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
+        return true;
     }
 
     // Called once after isFinished returns true
