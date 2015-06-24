@@ -19,14 +19,14 @@ public class TankDrive extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        if (Math.abs(OI.leftStick.getY()) > Globals.deadzone) {
-    		drivetrain.driveLeft(OI.leftStick.getY());
+        if (Math.abs(OI.controller.getRawAxis(2)) > Globals.deadzone) {
+    		drivetrain.driveLeft(OI.controller.getRawAxis(2));
     	} else {
     		drivetrain.driveLeft(0);
     	}
     	
-    	if (Math.abs(OI.rightStick.getY()) > Globals.deadzone) {
-    		drivetrain.driveRight(OI.rightStick.getY());
+    	if (Math.abs(OI.controller.getRawAxis(5)) > Globals.deadzone) {
+    		drivetrain.driveRight(OI.controller.getRawAxis(5));
     	} else {
     		drivetrain.driveRight(0);
     	}

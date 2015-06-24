@@ -23,7 +23,7 @@ public class Shooter extends Subsystem {
             shootBottom.set(true);
         }
         Globals.shootTop = !Globals.shootTop;
-        Globals.shotCount = 1;
+        Globals.shotCount++;
     }
     
     public void changeAngle(){
