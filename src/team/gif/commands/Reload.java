@@ -1,11 +1,10 @@
 package team.gif.commands;
 
 import team.gif.*;
-import team.gif.subsystems.Reloader;
 
 /**
  *
- * @author Derek Ho
+ * @author Nathan & Derek
  */
 public class Reload extends CommandBase {
     
@@ -19,6 +18,7 @@ public class Reload extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+        //To do
         reloader.reload(Globals.reloadSpeed);
     }
 
