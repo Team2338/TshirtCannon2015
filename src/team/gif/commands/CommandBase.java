@@ -1,7 +1,6 @@
 package team.gif.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
-import edu.wpi.first.wpilibj.command.Subsystem;
 import team.gif.OI;
 import team.gif.subsystems.*;
 
@@ -9,7 +8,7 @@ import team.gif.subsystems.*;
  * The base for all commands. All atomic commands should subclass CommandBase.
  * CommandBase stores creates and stores each control system. To access a
  * subsystem elsewhere in your code in your code use CommandBase.exampleSubsystem
- * @author Author
+ * @author Nathan & Derek
  */
 public abstract class CommandBase extends Command {
 

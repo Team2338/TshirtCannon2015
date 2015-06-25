@@ -1,12 +1,17 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package team.gif.commands;
 
 /**
  *
  * @author Nathan
  */
-public class Fire extends CommandBase {
+public class shooterDefault extends CommandBase {
     
-    public Fire() {
+    public shooterDefault() {
         requires(shooter);
     }
 
@@ -16,12 +21,13 @@ public class Fire extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        shooter.fire();
+        shooter.shooterDefault();
+        
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return true;
+        return false;
     }
 
     // Called once after isFinished returns true

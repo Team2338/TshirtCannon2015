@@ -1,12 +1,14 @@
 package team.gif.commands;
 
+import team.gif.*;
+
 /**
  *
- * @author Nathan
+ * @author Derek
  */
-public class Fire extends CommandBase {
+public class changeAngle extends CommandBase {
     
-    public Fire() {
+    public changeAngle() {
         requires(shooter);
     }
 
@@ -16,12 +18,12 @@ public class Fire extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        shooter.fire();
+        shooter.changeAngle(OI.controller.getRawAxis(3));
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return true;
+        return false;
     }
 
     // Called once after isFinished returns true

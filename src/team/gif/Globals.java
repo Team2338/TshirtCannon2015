@@ -7,12 +7,12 @@ package team.gif;
 
 /**
  *
- * @author Derek Ho
+ * @author Nathan & Derek
  */
 public class Globals {
     public static final double reloadSpeed = 0.50;
+    public static final double rotationSpeed = 0.25;
     public static final double deadzone = .1;
     
-    public static int shotCount = 0;
-    public static boolean shootTop = false;
+    public static int barrelNum = 1;
 }

@@ -12,13 +12,10 @@ import team.gif.commands.*;
 public class OI {
     public static final Joystick controller = new Joystick(1);
     
-    private static Button leftTrigger;
-    private static Button right2;
-    private static Button right3;
+    private static Button rightBump;
     
     public OI(){
-        leftTrigger = new JoystickButton(controller, 6);
-        leftTrigger.whenPressed(new Fire());
+        rightBump = new JoystickButton(controller, 6);
+        rightBump.whenPressed(new Fire());
     }
 }
-

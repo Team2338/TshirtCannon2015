@@ -14,11 +14,15 @@ public class RobotMap {
     public static final int angleMotor = 4;
     
     //DIO
-    public static final int readySensor = 1;
+    public static final int minAngle = 1;
+    public static final int maxAngle = 2;
+    public static final int slowDown = 3;
+    public static final int lock = 4;
+    public static final int leftEnd = 5;
+    public static final int rightEnd = 6;
     
     //Solenoid
-    public static final int shootTop = 0;
-    public static final int shootBottom = 1;
-    public static final int lockA = 2;
-    public static final int lockB = 3;
+    public static final int barrel1 = 0;
+    public static final int barrel2 = 1;
+    public static final int barrel3 = 2;
 }
