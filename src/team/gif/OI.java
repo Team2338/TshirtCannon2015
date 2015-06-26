@@ -11,11 +11,15 @@ import team.gif.commands.*;
  */
 public class OI {
     public static final Joystick controller = new Joystick(1);
+    public static final Joystick slave = new Joystick(2);
     
-    private static Button rightBump;
+    private static Button rightBump = new JoystickButton(controller, 6);
+    private static Button start = new JoystickButton(controller, 8);
+    private static Button rbSlave = new JoystickButton(slave, 6);
     
     public OI(){
-        rightBump = new JoystickButton(controller, 6);
-        rightBump.whenPressed(new Fire());
+        rightBump.whenPressed(new Fire(false));
+        start.whenPressed(new slaveSwitch());
+        rbSlave.whenPressed(new Fire(true));
     }
 }

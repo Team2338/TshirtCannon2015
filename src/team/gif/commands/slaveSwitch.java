@@ -1,15 +1,19 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package team.gif.commands;
 
-import team.gif.*;
 /**
  *
  * @author Nathan
  */
-public class Fire extends CommandBase {
-    boolean slave;
-    public Fire(boolean slave) {
+public class slaveSwitch extends CommandBase {
+    
+    public slaveSwitch() {
+        requires(drivetrain);
         requires(shooter);
-        this.slave = slave;
     }
 
     // Called just before this Command runs the first time
@@ -18,9 +22,9 @@ public class Fire extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        if(slave = Globals.slaveOn){
-            shooter.fire();
-        }
+        drivetrain.driveLeft(0);
+        drivetrain.driveRight(0);
+        
     }
 
     // Make this return true when this Command no longer needs to run execute()

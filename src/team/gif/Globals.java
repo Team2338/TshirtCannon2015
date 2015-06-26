@@ -15,4 +15,6 @@ public class Globals {
     public static final double deadzone = .1;
     
     public static int barrelNum = 1;
+    
+    public static boolean slaveOn = false;
 }
