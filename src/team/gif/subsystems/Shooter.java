@@ -1,7 +1,7 @@
 package team.gif.subsystems;
 
 import edu.wpi.first.wpilibj.DigitalInput;
-import edu.wpi.first.wpilibj.Solenoid;
+import edu.wpi.first.wpilibj.DigitalOutput;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.Victor;
 import team.gif.*;
@@ -15,9 +15,9 @@ import team.gif.commands.shooterDefault;
 public class Shooter extends Subsystem {
     
     private static final Victor angleMotor = new Victor(RobotMap.angleMotor);
-    private static final Solenoid barrel1 = new Solenoid(RobotMap.barrel1);
-    private static final Solenoid barrel2 = new Solenoid(RobotMap.barrel2);
-    private static final Solenoid barrel3 = new Solenoid(RobotMap.barrel3);
+    private static final DigitalOutput barrel1 = new DigitalOutput(RobotMap.barrel1);
+    private static final DigitalOutput barrel2 = new DigitalOutput(RobotMap.barrel2);
+    private static final DigitalOutput barrel3 = new DigitalOutput(RobotMap.barrel3);
     DigitalInput minAngle = new DigitalInput(RobotMap.minAngle);
     DigitalInput maxAngle = new DigitalInput(RobotMap.maxAngle);
     

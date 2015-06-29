@@ -16,13 +16,12 @@ public class RobotMap {
     //DIO
     public static final int minAngle = 1;
     public static final int maxAngle = 2;
+    public static final int barrel1 = 3;
+    public static final int barrel2 = 4;
+    public static final int barrel3 = 5;
+    
     public static final int slowDown = 3;
     public static final int lock = 4;
     public static final int leftEnd = 5;
     public static final int rightEnd = 6;
-    
-    //Solenoid
-    public static final int barrel1 = 0;
-    public static final int barrel2 = 1;
-    public static final int barrel3 = 2;
 }
