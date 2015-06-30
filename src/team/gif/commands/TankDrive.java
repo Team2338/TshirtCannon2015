@@ -24,8 +24,8 @@ public class TankDrive extends CommandBase {
                     drivetrain.driveLeft(0);
             }
 
-            if (Math.abs(OI.slave.getRawAxis(5)) > Globals.deadzone) {
-                    drivetrain.driveRight(OI.slave.getRawAxis(5));
+            if (Math.abs(OI.slave.getRawAxis(6)) > Globals.deadzone) {
+                    drivetrain.driveRight(OI.slave.getRawAxis(6));
             } else {
                     drivetrain.driveRight(0);
             }
@@ -36,8 +36,8 @@ public class TankDrive extends CommandBase {
                     drivetrain.driveLeft(0);
             }
 
-            if (Math.abs(OI.controller.getRawAxis(5)) > Globals.deadzone) {
-                    drivetrain.driveRight(OI.controller.getRawAxis(5));
+            if (Math.abs(OI.controller.getRawAxis(6)) > Globals.deadzone) {
+                    drivetrain.driveRight(OI.controller.getRawAxis(6));
             } else {
                     drivetrain.driveRight(0);
             }
