@@ -5,7 +5,7 @@ import edu.wpi.first.wpilibj.DigitalOutput;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.Victor;
 import team.gif.*;
-import team.gif.commands.shooterDefault;
+import team.gif.commands.ChangeAngle;
 
 /**
  *
@@ -55,16 +55,13 @@ public class Shooter extends Subsystem {
             angleMotor.set(0);
         }else{
             angleMotor.set(speed);
-      }
-    }
-    public void shooterDefault(){
+        }
         barrel1.set(false);
         barrel2.set(false);
         barrel3.set(false);
-        angleMotor.set(0);
     }
     
     public void initDefaultCommand() {
-        setDefaultCommand(new shooterDefault());
+        setDefaultCommand(new ChangeAngle());
     }
 }

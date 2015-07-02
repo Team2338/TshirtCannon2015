@@ -6,9 +6,9 @@ import team.gif.*;
  *
  * @author Derek
  */
-public class changeAngle extends CommandBase {
+public class ChangeAngle extends CommandBase {
     
-    public changeAngle() {
+    public ChangeAngle() {
         requires(shooter);
     }
 

@@ -19,7 +19,7 @@ public class OI {
     
     public OI(){
         rightBump.whenPressed(new Fire(false));
-        start.whenPressed(new slaveSwitch());
+        start.whenPressed(new SlaveSwitch());
         rbSlave.whenPressed(new Fire(true));
     }
 }

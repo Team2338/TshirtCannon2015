@@ -3,8 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/Nathan/Documents/NetBeansProjects/TshirtCannon2015/src/team/gif/OI.java</file>
+            <file>file:/C:/Users/Nathan/Documents/NetBeansProjects/TshirtCannon2015/src/team/gif/commands/CommandBase.java</file>
+            <file>file:/C:/Users/Nathan/Documents/NetBeansProjects/TshirtCannon2015/src/team/gif/commands/SlaveSwitch.java</file>
+            <file>file:/C:/Users/Nathan/Documents/NetBeansProjects/TshirtCannon2015/src/team/gif/commands/ChangeAngle.java</file>
             <file>file:/C:/Users/Nathan/Documents/NetBeansProjects/TshirtCannon2015/src/team/gif/commands/Fire.java</file>
-            <file>file:/C:/Users/Nathan/Documents/NetBeansProjects/TshirtCannon2015/src/team/gif/commands/changeAngle.java</file>
             <file>file:/C:/Users/Nathan/Documents/NetBeansProjects/TshirtCannon2015/src/team/gif/subsystems/Shooter.java</file>
         </group>
     </open-files>

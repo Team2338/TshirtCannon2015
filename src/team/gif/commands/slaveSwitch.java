@@ -9,18 +9,16 @@ package team.gif.commands;
  *
  * @author Nathan
  */
-public class slaveSwitch extends CommandBase {
+public class SlaveSwitch extends CommandBase {
     
-    public slaveSwitch() {
+    public SlaveSwitch() {
         requires(drivetrain);
         requires(shooter);
     }
 
-    // Called just before this Command runs the first time
     protected void initialize() {
     }
-
-    // Called repeatedly when this Command is scheduled to run
+    
     protected void execute() {
         drivetrain.driveLeft(0);
         drivetrain.driveRight(0);
@@ -29,7 +27,7 @@ public class slaveSwitch extends CommandBase {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return true;
+        return false;
     }
 
     // Called once after isFinished returns true
