@@ -22,26 +22,27 @@ public class Shooter extends Subsystem {
     DigitalInput maxAngle = new DigitalInput(RobotMap.maxAngle);
     
     public void fire(){
-        switch(Globals.barrelNum){
-            case 1:
-                barrel1.set(true);
-                barrel2.set(false);
-                barrel3.set(false);
-                Globals.barrelNum = 2;
-                break;
-            case 2:
-                barrel1.set(false);
-                barrel2.set(true);
-                barrel3.set(false);
-                Globals.barrelNum = 3;
-                break;
-            case 3:
-                barrel1.set(false);
-                barrel2.set(false);
-                barrel3.set(true);
-                Globals.barrelNum = 1;
-                break;
-        }
+        barrel1.set(true);
+//        switch(Globals.barrelNum){
+//            case 1:
+//                barrel1.set(true);
+//                barrel2.set(false);
+//                barrel3.set(false);
+//                Globals.barrelNum = 2;
+//                break;
+//            case 2:
+//                barrel1.set(false);
+//                barrel2.set(true);
+//                barrel3.set(false);
+//                Globals.barrelNum = 3;
+//                break;
+//            case 3:
+//                barrel1.set(false);
+//                barrel2.set(false);
+//                barrel3.set(true);
+//                Globals.barrelNum = 1;
+//                break;
+//        }
     }
     
     public void changeAngle(double speed){

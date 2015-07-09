@@ -3,7 +3,7 @@ package team.gif.commands;
 import team.gif.*;
 /**
  *
- * @oauth Nathan
+ * @author Nathan
  */
 public class TankDrive extends CommandBase {
     

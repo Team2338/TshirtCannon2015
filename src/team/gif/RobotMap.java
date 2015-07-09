@@ -8,20 +8,14 @@ package team.gif;
  */
 public class RobotMap {
     //PWM
-    public static final int leftMotor = 1;
-    public static final int rightMotor = 2;
-    public static final int reloadMotor = 3;
-    public static final int angleMotor = 4;
+    public static final int leftMotor = 3;
+    public static final int rightMotor = 1;
+    public static final int angleMotor = 2;
     
     //DIO
-    public static final int minAngle = 1;
-    public static final int maxAngle = 2;
-    public static final int barrel1 = 3;
-    public static final int barrel2 = 4;
-    public static final int barrel3 = 5;
-    
-    public static final int slowDown = 3;
-    public static final int lock = 4;
-    public static final int leftEnd = 5;
-    public static final int rightEnd = 6;
+    public static final int minAngle = 4;
+    public static final int maxAngle = 5;
+    public static final int barrel1 = 7;
+    public static final int barrel2 = 8;
+    public static final int barrel3 = 9;
 }

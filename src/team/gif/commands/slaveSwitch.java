@@ -5,6 +5,8 @@
  */
 package team.gif.commands;
 
+import team.gif.Globals;
+
 /**
  *
  * @author Nathan
@@ -22,6 +24,7 @@ public class SlaveSwitch extends CommandBase {
     protected void execute() {
         drivetrain.driveLeft(0);
         drivetrain.driveRight(0);
+        Globals.slaveOn = !Globals.slaveOn;
         
     }
 

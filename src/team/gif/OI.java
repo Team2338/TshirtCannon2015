@@ -15,11 +15,9 @@ public class OI {
     
     private static Button rightBump = new JoystickButton(controller, 6);
     private static Button start = new JoystickButton(controller, 8);
-    private static Button rbSlave = new JoystickButton(slave, 6);
     
     public OI(){
-        rightBump.whenPressed(new Fire(false));
+        rightBump.whenPressed(new Fire());
         start.whenPressed(new SlaveSwitch());
-        rbSlave.whenPressed(new Fire(true));
     }
 }

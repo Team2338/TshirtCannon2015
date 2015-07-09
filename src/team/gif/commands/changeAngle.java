@@ -18,27 +18,15 @@ public class ChangeAngle extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        if(Globals.slaveOn){
             if(OI.slave.getRawAxis(3) > Globals.deadzone && OI.slave.getRawAxis(4) > Globals.deadzone){
                 shooter.changeAngle(0);
             }else if(OI.slave.getRawAxis(3) > Globals.deadzone){
-                shooter.changeAngle(-OI.slave.getRawAxis(3));
+                shooter.changeAngle(-(OI.slave.getRawAxis(3)*Globals.rotationSpeed));
             }else if(OI.slave.getRawAxis(4) > Globals.deadzone){
-                shooter.changeAngle(OI.slave.getRawAxis(4));
+                shooter.changeAngle((OI.slave.getRawAxis(4)*Globals.rotationSpeed));
             }else{
                 shooter.changeAngle(0);
             }
-        }else{
-            if(OI.controller.getRawAxis(3) > Globals.deadzone && OI.controller.getRawAxis(4) > Globals.deadzone){
-                shooter.changeAngle(0);
-            }else if(OI.controller.getRawAxis(3) > Globals.deadzone){
-                shooter.changeAngle(-OI.controller.getRawAxis(3));
-            }else if(OI.controller.getRawAxis(4) > Globals.deadzone){
-                shooter.changeAngle(OI.controller.getRawAxis(4));
-            }else{
-                shooter.changeAngle(0);
-            }
-        }
     }
 
     // Make this return true when this Command no longer needs to run execute()
